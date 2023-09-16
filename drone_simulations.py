@@ -11,10 +11,12 @@ Date:
 July 19, 2023
 """
 import os.path
+import sys
+sys.path.append("backend")
 import time
 import numpy as np
-from printing_fxns import print_colored
-from simulation_functions import *
+from backend.printing_fxns import print_colored
+from backend.simulation_functions import *
 from statistics.random_samples_fxns import generate_noise_samples
 from experiment_setup import drone_exp_setup
 import pickle

@@ -1,5 +1,5 @@
 from drone_simulations import reach_avoid
-from simulation_functions import *
+from backend.simulation_functions import *
 
 # set the value of the chosen setting to True to generate the Monte Carlo simulations
 monte_carlo_gauss = True

@@ -12,13 +12,12 @@ July 17, 2023
 """
 import os
 import pickle
-
 import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib.lines import Line2D
 from matplotlib.patches import Circle, FancyArrowPatch
 
-from safe_halfspaces import CVaRHalfspace, DRCVaRHalfspace, MeanHalfspace
+from backend.safe_halfspaces import CVaRHalfspace, DRCVaRHalfspace, MeanHalfspace
 from statistics.random_samples_fxns import generate_noise_samples
 
 # font sizes

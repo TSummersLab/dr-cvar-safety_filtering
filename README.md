@@ -20,21 +20,16 @@ The package uses CVXPy to model and solve the problem.
     pip install polytope==0.2.3
     pip install colorama==0.4.6
     ```
-- Install the statistics package 
-    ```
-    cd statistics
-    pip install -e .
-    cd ..
-    ```
 
 ## Architecture
-We highlight the following files:
+We highlight the following files in `backend`:
 - `dynamic_vehicles.py`: defines classes for dynamic vehicles; i.e. vehicles with both geometry and a dynamics models
 - `dynamics.py`: defines classes for the vehicle dynamics
 - `geometry_vehicles.py`: defines classes for geometric vehicles
 - `ref_traj_generation.py`: defines classes to generate reference trajectories for the ego vehicle
 - `safe_halfspaces.py`: defines classes to obtain safe halfspaces
 - `safety_filters.py`: defines classes for MPC-based safety filters
+- `simulation_functions.py`: mostly includes plotting functions (and some to keep `drone_simulations.py` cleaner)
 
 ## Running the Scripts
 The following scripts are useful for running the experiments:
@@ -42,7 +37,7 @@ The following scripts are useful for running the experiments:
 - `experiment_setup.py`: setup for experiment scenarios (intersection, head-on, multi-obstacles, ...)
 - `multi_exp_sim.py`: runs Monte Carlo simulations and plots the results
 - `paper_figures.py`: generates the halfspace comparison plots and the halfspace compute time plots
-- `simulation_functions.py`: functions used to keep `drone_simulations.py` cleaner. Mostly includes plotting functions.
+
 
 ### Running simulations and generating experiment data:
 - To plot paper supporting figures (non-experiment figures), run `paper_figures.py`.
