@@ -63,7 +63,8 @@ class MPCReferenceTrajectory:
 
             # state bounds
             if self.state_Ax_leq_b is not None:
-                self.constraints += [np.array(self.state_Ax_leq_b['A']) @ self.x[:, t + 1]]
+                self.constraints += [np.array(self.state_Ax_leq_b['A']) @ self.x[:, t + 1]
+                                     <= np.array(self.state_Ax_leq_b['b'])]
 
             # input bounds
             if self.control_Ax_leq_b is not None:
